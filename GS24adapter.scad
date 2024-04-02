@@ -1,7 +1,7 @@
 /*
 Created by Ricardo Espinosa
 GNU General Public License v3.0
-V1.0 - 31/03/2024
+Pen adapter for Roland GS24 - V1.0 - 31/03/2024
 */
 
 
