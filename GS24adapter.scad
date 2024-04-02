@@ -13,7 +13,7 @@ couplingPartDiameter=16;
 GS24diameter=11.5;
 GS24height=11+part1height+couplingPartHeight;
 unionParts=4;
-axelDistance=couplingPartDiameter/2+penDiameter/2;
+axelDistance=couplingPartDiameter/2+penDiameter/2+3;
 $fn=150;
 
 // PART 1
@@ -30,12 +30,12 @@ difference(){
     translate([axelDistance,0,-part1height])
         cylinder(h=part1height*3, d=penDiameter);
     
-    translate([axelDistance+penDiameter/2+part1thickness/2-1.25,-2.75,-0.1])
-        cube([2.5,5.5,8]);
+    translate([axelDistance+penDiameter/2+part1thickness/2-1.5,-3.25,-0.1])
+        cube([3,6.5,8]);
     
     translate([axelDistance+penDiameter/2-1,0,5])
     rotate([0,90,0])
-        cylinder(h=part1thickness*2, d=3);
+        cylinder(h=part1thickness*2, d=3.5);
 
 }}
 
@@ -47,6 +47,3 @@ cylinder(h=couplingPartHeight,d=couplingPartDiameter);
 
 // GS24 ADAPTER
 cylinder(h=GS24height, d=GS24diameter);
-
-
-
